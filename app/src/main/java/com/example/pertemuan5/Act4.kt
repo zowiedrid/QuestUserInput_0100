@@ -84,9 +84,10 @@ fun FormDataDiri(modifier: Modifier){
 
         Divider(
             modifier = Modifier.padding(
-                bottom = dimensionResource(R.dimen.divider_tipis),
-                top = dimensionResource(R.dimen.divider_tipis)
+                bottom = dimensionResource(R.dimen.padding_medium),
+                top = dimensionResource(R.dimen.padding_medium)
             ),
+            thickness = dimensionResource(R.dimen.divider_tipis),
             color = Color.DarkGray
         )
 
@@ -102,6 +103,15 @@ fun FormDataDiri(modifier: Modifier){
         ) {
             Text(stringResource(R.string.submit))
         }
+
+        Divider(
+            modifier = Modifier.padding(
+                bottom = dimensionResource(R.dimen.padding_medium),
+                top = dimensionResource(R.dimen.padding_medium)
+            ),
+            thickness = dimensionResource(R.dimen.divider_tipis),
+            color = Color.DarkGray
+        )
     }
 
 }

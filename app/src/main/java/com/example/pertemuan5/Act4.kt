@@ -60,7 +60,16 @@ fun FormDataDiri(modifier: Modifier){
             }
         )
 
-        Row() {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(
+                    top = dimensionResource(R.dimen.padding_small),
+                    bottom = dimensionResource(R.dimen.padding_small)
+                ),
+            horizontalArrangement = Arrangement.Center,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
             gender.forEach { item ->
                 Row(modifier = Modifier.selectable(
                     selected = textJK == item,
